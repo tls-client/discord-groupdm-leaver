@@ -1,11 +1,9 @@
 # GroupDM-Leaver
 1. ```pip install discord.py-self python_dotenv```
 1. ```python main.py```
-1. `ユーザー名 is online`と表示されると自動退出が開始します
-1. 退出が完了するとコンソールに`◯件のグループDMからの退出が完了しました`と表示されます<br>
-※もし退出したくないグループDMがある場合は、グループのIDをDM_IDSに入れてください
+1. `ユーザー名 is online`と表示されたら自動退出が開始します
 
-### 全部のグループDMから脱退する場合
+### すべてのグループDMから脱退する場合
 
 ```python
 import discord  
@@ -29,7 +27,7 @@ async def on_ready():
 
 client.run(TOKEN)
 ```
-### 一部のグループから抜けたくない場合
+### 一部のグループDMから脱退しない場合
 
 ```python
 DM_IDS = ["12345678", "23456789"]
